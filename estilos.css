@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: x-large;
+}
+
+header
+{
+    display: flex;
+    background-color: #0f684b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.divTitulo
+{
+    flex: 80%;
+    background-color: #0f684b;
+}
+nav
+{
+    background-color: #a6b985;
+    /*No se le puede cambiar el color de letra a las etiquetas
+    <a></a> con color: black;  , por lo que se necesita que lo cambie
+    específicamente en nav a*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a
+{
+    color: #213435;
+    font-size: 20px;
+    padding: 15px;
+    /*Para quitarle el formato que tenía por defecto se utiliza la siguiente
+    etiqueta, para que se adapte al estilo que nosotros queramos*/
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    background-color: rgb(252, 218, 211);
+    color: blue;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: rgb(255, 253, 194);*/
+}
+
+aside
+{
+    flex: 30%;
+    background-color: #e1e3ac;
+    padding: 10px;
+    text-align: center;
+}
+
+section
+{
+    flex: 70%;
+    background-color: #9ACF97;
+    padding: 10px;
+    text-align: center;
+}
+
+article
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+article p
+{
+    text-align: justify;
+}
+
+footer
+{
+    background-color: #0f684b;
+    color: white;
+}
+
+@media screen and (max-width:700px) 
+{
+    nav
+    {
+        flex-flow: column;
+    }
+}
