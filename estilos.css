@@ -12,22 +12,21 @@ body
 header
 {
     display: flex;
-    background-color: #0f684b;
+    background-color: #ce7095;
     color: white;
     text-align: center;
     padding: 20px;
 }
+
 .divTitulo
 {
     flex: 80%;
-    background-color: #0f684b;
+    background-color: #ce70951;
 }
+
 nav
 {
-    background-color: #a6b985;
-    /*No se le puede cambiar el color de letra a las etiquetas
-    <a></a> con color: black;  , por lo que se necesita que lo cambie
-    específicamente en nav a*/
+    background-color: #ffb2c1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -36,31 +35,28 @@ nav
 
 nav a
 {
-    color: #213435;
+    color: #0d0210;
     font-size: 20px;
     padding: 15px;
-    /*Para quitarle el formato que tenía por defecto se utiliza la siguiente
-    etiqueta, para que se adapte al estilo que nosotros queramos*/
     text-decoration: none;
 }
 
 nav a:hover
 {
-    background-color: rgb(252, 218, 211);
-    color: blue;
+    background-color: #4d3147;
+    color: #f7f1e1;
 }
 
 main
 {
     display: flex;
     flex-wrap: wrap;
-    /*background-color: rgb(255, 253, 194);*/
 }
 
 aside
 {
     flex: 30%;
-    background-color: #e1e3ac;
+    background-color: #e1bdf0;
     padding: 10px;
     text-align: center;
 }
@@ -68,7 +64,7 @@ aside
 section
 {
     flex: 70%;
-    background-color: #9ACF97;
+    background-color: #f7f1e1;
     padding: 10px;
     text-align: center;
 }
@@ -86,8 +82,8 @@ article p
 
 footer
 {
-    background-color: #0f684b;
-    color: white;
+    background-color: #c9b7c7;
+    color: black;
 }
 
 @media screen and (max-width:700px) 
@@ -96,4 +92,121 @@ footer
     {
         flex-flow: column;
     }
+}
+
+/*-----------------------------ESTILO DE TARJETAS---------------------------*/
+.contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.tarjeta{
+    border: 2px solid #ce7095;
+    width: 300px;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow: #ce7095 -5px 5px 5px;
+}
+
+.cuerpo-tarjeta
+{
+    padding: 15px;
+}
+
+.tarjeta img
+{
+    width: 200px;
+    height: 230px;
+    padding: 15px;
+}
+
+.titulo-tarjeta
+{
+    text-align: center;
+    font-weight: 800;
+    padding: 15px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ce7095;
+    background-color: #ce7095;
+    color: rgb(251, 251, 251);
+    font-size: 2000 px;
+}
+
+.tarjeta div 
+{
+    padding: 15px;
+}
+
+.descripcion
+{
+    text-align: justify;
+}
+
+.precio
+{
+    text-align: center;
+}
+
+.tarjeta button
+{
+    padding: 10px;
+    background-color: #ce7095;
+    color: rgb(255, 255, 255);
+    font-size: 60 px;
+    border: 1px solid #ce7095;
+}
+
+.tarjeta button:hover
+{
+    background-color: #4d3147;
+    color: #f7f1e1;
+}
+/*------------------------------------TABLAS-------------------------------------*/
+
+.tabla
+{
+    background-color: #f7f1e1;
+    justify-content: left;
+}
+
+.contenedor2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tabla2
+{
+    background-color: #f7f1e1;
+    flex-wrap: left;
+    justify-content: left;
+}
+
+.boton2
+{
+    background-color: #ce7095;
+    color: black;
+}
+
+.boton2:hover
+{
+    background-color:#e1bdf0;
+    color: black;
+}
+
+.boton3
+{
+    background-color: white;
+    color: black;
+}
+
+.boton3:hover
+{
+    background-color: #4d3147;
+    color: #f7f1e1;
 }
