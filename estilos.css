@@ -86,13 +86,13 @@ footer
     color: black;
 }
 
-@media screen and (max-width:700px) 
+/*@media screen and (max-width:700px) 
 {
     nav
     {
         flex-flow: column;
     }
-}
+}*/
 
 /*-----------------------------ESTILO DE TARJETAS---------------------------*/
 .contenedor
@@ -210,3 +210,45 @@ footer
     background-color: #4d3147;
     color: #f7f1e1;
 }
+
+/*------------------------------23 OCT 2023--------------------------------*/
+@media screen and (max-width:1024px)
+{
+    /*para tamaño tableta*/
+    .tarjeta
+    {
+        width: 218px;
+    }
+    .tarjeta img
+    {
+    width: 150px;
+    height: 180px;
+    }
+}
+@media screen and (max-width:767px)
+    /*para tamaño celular*/
+{
+    .tarjeta
+    {
+        width: 290px;
+    }
+    .tarjeta img
+    {
+    width: 150px;
+    height: 180px;
+    }
+
+    nav
+    {
+        flex-flow: column;
+    }
+}
+@media screen and (max-width:370px)
+{
+    nav
+    {
+        flex-flow: row;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
