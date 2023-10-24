@@ -21,7 +21,7 @@ header
 .divTitulo
 {
     flex: 80%;
-    background-color: #ce70951;
+    background-color: #ce7095;
 }
 
 nav
@@ -85,14 +85,6 @@ footer
     background-color: #c9b7c7;
     color: black;
 }
-
-/*@media screen and (max-width:700px) 
-{
-    nav
-    {
-        flex-flow: column;
-    }
-}*/
 
 /*-----------------------------ESTILO DE TARJETAS---------------------------*/
 .contenedor
@@ -224,6 +216,10 @@ footer
     width: 150px;
     height: 180px;
     }
+    header
+    {
+        flex-flow: column;
+    }
 }
 @media screen and (max-width:767px)
     /*para tamaño celular*/
@@ -237,18 +233,9 @@ footer
     width: 150px;
     height: 180px;
     }
-
-    nav
+    header
     {
         flex-flow: column;
     }
 }
-@media screen and (max-width:370px)
-{
-    nav
-    {
-        flex-flow: row;
-    }
-}
-
 /*-----------------------------------------------------------------------------*/
